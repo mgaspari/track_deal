@@ -1,0 +1,36 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'track_deal' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+  # pod 'React', :path => '../node_modules/react-native'
+  # pod 'RNBackgroundGeolocation', :path => '../node_modules/react-native-background-geolocation'
+  # pod 'RNBackgroundFetch', :path => '../node_modules/react-native-background-fetch'
+  # Pods for track_deal
+  pod 'RadarSDK', '~> 1.2.0'
+
+  # target 'track_deal-tvOSTests' do
+  #   inherit! :search_paths
+  #   # Pods for testing
+  # end
+
+  target 'track_dealTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'track_deal-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for track_deal-tvOS
+
+  target 'track_deal-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
